@@ -1,0 +1,138 @@
+// @minWidth: 30px;
+// @height: 28px;
+// @lineHeight: @height;
+// @activeHeight: @height + 2;
+@inputWidth: 35px;
+@inputHeight: 28px;
+@buttonMinWidth: 40px;
+@buttonHeight: 30px;
+@buttonLineHeight: @buttonHeight - 2;
+@buttonPadding: 0 8px;
+// @navHeight: @activeHeight;
+@col-hover-blue: #4080FF;
+@col-placeholder-grey: rgb(170, 170, 170);
+
+#pagination_btm {
+
+  bottom: 0;
+  position: sticky;
+  position: -webkit-sticky;
+
+  .pag_pos {
+    cursor: default;
+    line-height: @buttonHeight;
+    user-select: none;
+    text-align: center;
+    margin: 5px;
+    width: 50px;
+    font-size: @font-size;
+    font-weight: bolder;
+    font-family: 'Jetbrains Mono', monospace;
+  }
+
+  .nav_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    color: @col-grey-900;
+    border: none;
+    background-color: transparent;
+    font-size: @font-size;
+    font-weight: bolder;
+    font-family: 'Jetbrains Mono', monospace;
+    user-select: none;
+  }
+
+  .nav_buttons button {
+    width: @buttonMinWidth; // 20px;
+    height: @buttonHeight; // 30px;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 5px;
+    transition: 0.4s;
+    line-height: @buttonHeight;
+    border: none;
+    color: @col-grey-900;
+    background-color: transparent;
+    font-size: @font-size+5px;
+    font-weight: bolder;
+    font-family: 'Jetbrains Mono', monospace;
+
+    &:hover {
+      color: @col-grey-100;
+      background-color: @col-grey-700;
+    }
+
+    &:disabled {
+      cursor: default;
+      border: none;
+      color: @col-white;
+      background-color: @col-white;
+      font-size: @font-size;
+      font-weight: bolder;
+      font-family: 'Jetbrains Mono', monospace;
+    }
+  }
+
+  .page_input {
+
+    display: flex;
+    align-content: flex-end;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    > input[type="text"] {
+      width: @inputWidth;
+      height: @inputHeight;
+      background: @col-back;
+      border-radius: 2px;
+      border: 2px solid @col-divider-black;
+      padding: @buttonPadding;
+      text-align: center;
+      vertical-align: baseline;
+      outline: none;
+      box-sizing: initial;
+      margin-right: 10px;
+      box-shadow: 0 0 2px @col-divider-black inset;
+      font-size: @font-size;
+      font-weight: bolder;
+      font-family: 'Jetbrains Mono', monospace;
+
+      &::placeholder {
+        color: @col-placeholder-grey;
+        opacity: 1; /* Firefox */
+      }
+
+      &:focus::placeholder {
+        color: transparent;
+      }
+    }
+
+    > input[type="button"] {
+      min-width: @buttonMinWidth;
+      height: @buttonHeight+2px;
+      line-height: @buttonLineHeight+2px;
+      background: @col-back;
+      border-radius: 2px;
+      border: 2px solid @col-divider-black;
+      text-align: center;
+      padding: @buttonPadding;
+      vertical-align: baseline;
+      outline: none;
+      box-shadow: 0 0 2px @col-divider-black inset;
+      color: @col-text;
+      cursor: pointer;
+
+      &:hover {
+        background-color: @col-hover-blue;
+      }
+    }
+  }
+}

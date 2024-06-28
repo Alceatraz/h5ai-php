@@ -1,0 +1,19 @@
+{
+    "heads": {
+        "style": {
+            "local": [
+                "font-ubuntu.css",
+                "font-jetbrains.css"
+            ],
+            "global": []
+        },
+        "script": {
+            "local": [],
+            "global": []
+        }
+    },
+    "fonts": {
+        "regular": ["Ubuntu", "sans-serif"],
+        "monospace": ["Ubuntu Mono", "monospace"]
+    }
+}

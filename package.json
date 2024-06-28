@@ -1,0 +1,27 @@
+{
+    "name": "h5ai",
+    "version": "1.0.0-SNAPSHOT",
+    "author": "lrsjung/Glubsy/Alceatraz",
+    "license": "MIT",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Alceatraz/h5ai-php"
+    },
+    "scripts": {
+        "test": "node test",
+        "build": "node ghu release"
+    },
+    "devDependencies": {
+        "@babel/core": "7.18.6",
+        "@babel/preset-env": "7.12.11",
+        "normalize.css": "8.0.1",
+        "null-loader": "4.0.1",
+        "lolight": "1.4.0",
+        "marked": "1.2.9",
+        "jsdom": "16.4.0",
+        "kjua": "0.9.0",
+        "scar": "2.3.0",
+        "ghu": "0.26.0"
+    }
+}

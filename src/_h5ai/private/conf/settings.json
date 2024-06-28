@@ -1,0 +1,213 @@
+{
+    "appearance": {
+        "browsing": {
+            "general": {
+                "use1024": false,
+                "showParentFolder": false,
+                "showParentFolderName": false,
+                "maxIconSize": 360,
+                "viewMode": ["details", "grid", "icons"],
+                "itemSize": [20, 40, 60, 80, 100, 125, 150, 175, 200, 250, 300, 400]
+            },
+            "pagination": {
+                "enable": true,
+                "hidden": false,
+                "default": 25,
+                "pagination": [0, 10, 25, 50, 100, 250, 500]
+            },
+            "title": {
+                "dynamic": true,
+                "staticTitle": "H5ai-X"
+            },
+            "crumb": {
+                "enable": true,
+                "override": "H5ai-X"
+            },
+            "banner": {
+                "enable": true
+            },
+            "localization": {
+                "enable": true,
+                "browser": true
+            }
+        },
+        "module": {
+            "toggle": {
+                "enable": true
+            },
+            "filter": {
+                "enable": true,
+                "advanced": true,
+                "ignoreCase": true,
+                "debounceTime": 100
+            },
+            "select": {
+                "enabled": true,
+                "dragging": true,
+                "checkboxes": true
+            },
+            "tree": {
+                "enable": true,
+                "default": true,
+                "maxFolder": 50,
+                "sort": {
+                    "ignoreCase": true,
+                    "naturalOrder": true
+                }
+            },
+            "sort": {
+                "enable": true,
+                "column": 0,
+                "folders": 0,
+                "reverse": false,
+                "ignoreCase": true,
+                "naturalOrder": true
+            },
+            "information": {
+                "enable": true,
+                "default": true,
+                "qrcode": {
+                    "black": "#555555",
+                    "white": "#FFFFFF",
+                    "enable": true
+                }
+            }
+        },
+        "feature": {
+            "contextmenu": {
+                "enable": false,
+                "warning": "This feature is not working, Jung didn't finish it"
+            },
+            "sidebar": {
+                "enable": true
+            },
+            "download": {
+                "enable": true,
+                "enableFolder": true
+            },
+            "searching": {
+                "enable": true,
+                "enableRegex": true,
+                "debounceDelay": 1000
+            },
+            "thumbnails": {
+                "enable": true,
+                "chunkSize": 5,
+                "delayTime": 100,
+                "extension": [
+                    "img-bmp", "img-jpg", "img-png", "img-ico", "img-gif", "ing-svg", "img-tiff",
+                    "vid-avi", "vid-flv", "vid-mkv", "vid-mov", "vid-mp4", "vid-mpg", "vid-ts", "vid-webm", "vid-wmv"
+                ]
+            },
+            "preview": {
+                "enable": true,
+                "module": {
+                    "img": {
+                        "enable": true,
+                        "fileType": ["img", "img-bmp", "img-gif", "img-ico", "img-jpg", "img-png", "img-raw", "img-svg"]
+                    },
+                    "aud": {
+                        "enable": true,
+                        "autoplay": false,
+                        "fileType": ["aud"]
+                    },
+                    "vid": {
+                        "enable": true,
+                        "autoplay": false,
+                        "fileType": ["vid", "vid-avi", "vid-flv", "vid-mkv", "vid-mov", "vid-mp4", "vid-mpg", "vid-webm"]
+                    },
+                    "txt": {
+                        "enable": true,
+                        "styles": {
+                            "text": ["txt", "txt-authors", "txt-build", "txt-diff", "txt-license", "txt-readme"],
+                            "code": [
+                                "txt-c", "txt-cpp", "txt-css", "txt-go", "txt-h", "txt-hpp", "txt-html", "txt-install",
+                                "txt-java", "txt-js", "txt-json", "txt-less", "txt-log", "txt-makefile", "txt-md",
+                                "txt-php", "txt-py", "txt-rb", "txt-rss", "txt-rtf", "txt-rust", "txt-scala",
+                                "txt-script", "txt-source", "txt-tex", "txt-vcal", "txt-xm", "txt-xml"
+                            ],
+                            "markdown": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "preference": {
+        "general": {
+            "global-exclusive": []
+        },
+        "browsing": {
+            "theme": "comity",
+            "time": {
+                "enable": true,
+                "use-newest": true
+            },
+            "size": {
+                "enable-file": true,
+                "enable-folder": true
+            },
+            "managed": {
+                "enable": true,
+                "indexes": [
+                    "index.php",
+                    "index.htm",
+                    "index.html"
+                ]
+            },
+            "hidden": {
+                "folder": false,
+                "unreadable-file": true,
+                "unreadable-folder": true
+            },
+            "exclusive": {
+                "enable": true,
+                "global": true,
+                "extra-regex": []
+            }
+        },
+        "download": {
+            "recursive": true,
+            "exclusive": {
+                "enable": true,
+                "global": true,
+                "extra-regex": []
+            }
+        },
+        "searching": {
+            "search-limit": 1000,
+            "result-limit": 1000,
+            "time": {
+                "enable": true,
+                "use-newest": true
+            },
+            "size": {
+                "enable-file": true,
+                "enable-folder": true
+            },
+            "managed": {
+                "enable": true,
+                "indexes": [
+                    "index.php",
+                    "index.htm",
+                    "index.html"
+                ]
+            },
+            "hidden": {
+                "folder": false,
+                "unreadable-file": true,
+                "unreadable-folder": true
+            },
+            "exclusive": {
+                "enable": true,
+                "global": true,
+                "extra-regex": []
+            }
+        },
+        "thumbnails": {
+            "image-width": 320,
+            "image-height": "240, calculated by width -> 4:3",
+            "exclusive-type": []
+        }
+    }
+}
